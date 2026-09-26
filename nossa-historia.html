@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossa História - Igreja Batista Nova Belém</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "#131313",
+              surface: "#131313",
+              primary: "#ffc960",
+              "on-primary": "#412d00",
+              "on-surface": "#e2e2e2",
+              "on-surface-variant": "#d4c4ae",
+              "outline-variant": "#504534",
+              "gold-accent": "#E6AC2E",
+            },
+            fontFamily: {
+              "display-lg": ["Anybody"],
+              "headline-md": ["Anybody"],
+              "headline-xl": ["Anybody"],
+              "nav-link": ["Inter"],
+              "body-md": ["Inter"],
+              "body-lg": ["Inter"],
+              "label-bold": ["Inter"],
+            },
+            fontSize: {
+              "headline-xl": ["48px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "800" }],
+              "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "700" }],
+              "nav-link": ["14px", { lineHeight: "1.0", letterSpacing: "0.05em", fontWeight: "600" }],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+              "label-bold": ["14px", { lineHeight: "1.2", fontWeight: "700" }],
+            },
+            spacing: {
+              gutter: "24px",
+              "section-padding-desktop": "80px",
+              "section-padding-mobile": "40px",
+              "stack-md": "16px",
+              "stack-lg": "32px",
+              "container-max": "1200px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body { background: #131313; color: #e2e2e2; }
+      .gold-gradient-text {
+        background: linear-gradient(to right, #ffc960, #B38624);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body class="bg-background text-on-surface font-body-md min-h-screen antialiased">
+    <header class="bg-background dark:bg-background border-b border-outline-variant dark:border-outline-variant sticky top-0 z-50">
+      <div class="flex flex-col items-center w-full max-w-container-max mx-auto px-gutter py-4 md:py-8">
+        <a class="font-display-lg text-headline-md text-on-surface dark:text-on-surface text-center block w-full mb-4 md:mb-8 hover:text-primary transition-colors" href="index.html">
+          <img src="./assets/images/logo.png" alt="Logo da Igreja Batista" class="mx-auto w-32 md:w-40" />
+        </a>
+        <nav class="flex flex-row flex-wrap items-center justify-center gap-6">
+          <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="index.html">Início</a>
+          <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="ministerios.html">Ministérios</a>
+          <a class="font-nav-link text-nav-link uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1 transition-colors" href="nossa-historia.html">Nossa História</a>
+          <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="celulas.html">Células</a>
+          <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="eventos.html">Eventos</a>
+          <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="contribua.html">Contribua</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-container-max mx-auto px-gutter py-section-padding-desktop">
+      <section class="text-center mb-section-padding-desktop">
+        <p class="font-label-bold text-label-bold uppercase tracking-widest text-primary mb-4">Desde 2007</p>
+        <h1 class="font-headline-xl text-headline-xl text-on-surface mb-6">Nossa <span class="gold-gradient-text">História</span></h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">
+          A Igreja Batista Nova Belém nasceu com o propósito de ser uma comunidade viva, acolhedora e comprometida com a Palavra de Deus.
+          Em cada passo, buscamos glorificar a Cristo e servir nossa cidade com amor, verdade e esperança.
+        </p>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-section-padding-desktop">
+        <div class="border border-outline-variant rounded-xl p-6 bg-surface-container-highest/40">
+          <div class="text-4xl font-black text-primary mb-3">2007</div>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-3">Primeiros passos</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">Começamos com uma visão simples: reunir pessoas para conhecer a Jesus, crescer em fé e viver em comunidade.</p>
+        </div>
+        <div class="border border-outline-variant rounded-xl p-6 bg-surface-container-highest/40">
+          <div class="text-4xl font-black text-primary mb-3">2014</div>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-3">Crescimento</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">Expandimos nossos grupos, ministérios e atividades, fortalecendo a formação espiritual e a parceria entre famílias.</p>
+        </div>
+        <div class="border border-outline-variant rounded-xl p-6 bg-surface-container-highest/40">
+          <div class="text-4xl font-black text-primary mb-3">Hoje</div>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-3">Missão em ação</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">Continuamos servindo nossa comunidade com cultos, células, missões locais e compromisso com o evangelho.</p>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+        <div class="rounded-2xl overflow-hidden border border-outline-variant">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80" alt="Igreja em culto" class="w-full h-full object-cover" style="min-height:440px;" />
+        </div>
+        <div>
+          <p class="font-label-bold text-label-bold uppercase tracking-widest text-primary mb-3">Nossa identidade</p>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Uma igreja com coração missionário</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Acreditamos que a fé deve ser vivida de forma prática: em oração, em estudo da Palavra, em relacionamento e em serviço ao próximo.
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+            Nossa história é a história de pessoas que encontraram em Cristo esperança, propósito e uma comunidade que os acolhe e os fortalece.
+          </p>
+          <a href="index.html" class="inline-block bg-primary text-on-primary font-label-bold text-label-bold uppercase py-3 px-6 rounded-md hover:bg-primary/90 transition-colors">Voltar para o início</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

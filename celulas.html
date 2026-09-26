@@ -1,0 +1,331 @@
+<!DOCTYPE html><html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Células - Igreja Batista Nova Belém</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#474746",
+                        "status-success": "#2ECC71",
+                        "tertiary-container": "#b7b5b5",
+                        "on-tertiary": "#313030",
+                        "primary-container": "#e6ac2e",
+                        "tertiary": "#d3d0d0",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-primary": "#412d00",
+                        "on-error": "#690005",
+                        "tertiary-fixed": "#e5e2e1",
+                        "secondary-container": "#454747",
+                        "surface-tint": "#f9bd3e",
+                        "surface": "#131313",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface-container-highest": "#353535",
+                        "inverse-surface": "#e2e2e2",
+                        "on-primary-fixed-variant": "#5e4200",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#303030",
+                        "outline": "#9c8f7b",
+                        "surface-bright": "#393939",
+                        "secondary": "#c6c6c7",
+                        "background": "#131313",
+                        "surface-dark": "#121212",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "surface-dim": "#131313",
+                        "on-primary-fixed": "#271900",
+                        "on-background": "#e2e2e2",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#1b1b1b",
+                        "primary": "#ffc960",
+                        "error": "#ffb4ab",
+                        "surface-container": "#1f1f1f",
+                        "secondary-fixed": "#e2e2e2",
+                        "inverse-primary": "#7c5800",
+                        "on-surface": "#e2e2e2",
+                        "on-tertiary-container": "#474747",
+                        "status-error": "#FF4D4D",
+                        "gold-muted": "#B38624",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-fixed": "#ffdea6",
+                        "primary-fixed-dim": "#f9bd3e",
+                        "outline-variant": "#504534",
+                        "on-primary-container": "#5e4200",
+                        "surface-container-lowest": "#0e0e0e",
+                        "gold-accent": "#E6AC2E",
+                        "on-secondary": "#2f3131",
+                        "on-surface-variant": "#d4c4ae",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-variant": "#353535"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "section-padding-mobile": "40px",
+                        "container-max": "1200px",
+                        "section-padding-desktop": "80px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-xl-mobile": ["Anybody"],
+                        "display-lg": ["Anybody"],
+                        "headline-md": ["Anybody"],
+                        "nav-link": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "headline-xl": ["Anybody"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "nav-link": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-bold": ["14px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Subtle shimmer effect for cards */
+        .glass-card {
+            background: linear-gradient(145deg, rgba(26,26,26,0.9) 0%, rgba(19,19,19,0.9) 100%);
+            border: 1px solid rgba(80, 69, 52, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(to right, #ffc960, #B38624);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<header class="bg-background dark:bg-background border-b border-outline-variant dark:border-outline-variant sticky top-0 z-50">
+    <div class="flex flex-col items-center w-full max-w-container-max mx-auto px-gutter py-4 md:py-8">
+        <a class="font-display-lg text-headline-md text-on-surface dark:text-on-surface text-center block w-full mb-4 md:mb-8 hover:text-primary transition-colors" href="index.html">
+            <img src="./assets/images/logo.png" alt="Logo da Igreja Batista" class="mx-auto w-32 md:w-40" />
+        </a>
+        <nav class="flex flex-row flex-wrap items-center justify-center gap-6">
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="index.html">Início</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="ministerios.html">Ministérios</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="nossa-historia.html">Nossa História</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1 transition-colors" href="celulas.html">Células</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="eventos.html">Eventos</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="contribua.html">Contribua</a>
+        </nav>
+    </div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full">
+<!-- Hero Section -->
+<section class="relative w-full py-section-padding-desktop flex flex-col items-center justify-center px-gutter overflow-hidden">
+<!-- Background Image with heavy overlay -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, low-key lighting photograph of a small group of diverse people sitting in a circle in a cozy, modern living room. They are engaged in deep conversation, with warm ambient lighting casting gentle shadows. The overall mood is intimate, welcoming, and deeply connected. The aesthetic aligns with a premium dark-mode interface, utilizing rich blacks and subtle warm golden accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl5NpxTOcOvwIDei3IQDCHE50_MzIoT3988R8lpCIPzx7yYGcOXDkkD3AjXiTJK4ms1c0V4hIvnpty9FuU2nchV2XCsytQdlzC7IGi-UrsRGE5ImgGXIW-i_TEtTwYqC6LXlsYARGbvEw00fi6S8haq8wCGd7sUCT5uijZAT736UPLWNMfV8rL0ocANb1YUI2Nu3_8Xe_47S4-86UUS9EZwEN_Ak5PwyFDTCprkY-eD7oSa89QWk4b_g')"></div>
+<div class="absolute inset-0 bg-background/80 bg-gradient-to-t from-background via-background/90 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto text-center flex flex-col items-center">
+<span class="font-label-bold text-label-bold uppercase tracking-widest text-primary mb-stack-sm flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="groups" data-weight="fill">groups</span>
+                    Comunidade
+                </span>
+<h1 class="font-headline-xl text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-on-surface mb-stack-md">
+                    Encontre sua <span class="gold-gradient-text">Célula</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    As células são o coração da nossa igreja. Pequenos grupos que se reúnem semanalmente nas casas para comunhão, estudo da Palavra e oração. Há um lugar preparado para você.
+                </p>
+</div>
+</section>
+<!-- Bento Grid Section -->
+<section class="w-full py-section-padding-desktop px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1: Jovens -->
+<article class="glass-card rounded-xl p-6 flex flex-col gap-4 group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-2xl" data-icon="local_fire_department" data-weight="fill">local_fire_department</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Célula Atos 2</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Focada em jovens adultos e universitários. Um ambiente de adoração intensa e discussões profundas sobre os desafios da vida moderna.
+                        </p>
+</div>
+<div class="mt-auto pt-4 border-t border-outline-variant flex flex-col gap-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_today">calendar_today</span>
+                            Sextas-feiras, 20h
+                        </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-lg" data-icon="location_on">location_on</span>
+                            Bairro Centro
+                        </div>
+</div>
+<button class="mt-4 w-full bg-transparent border border-primary text-primary font-label-bold text-label-bold uppercase py-3 rounded hover:bg-primary hover:text-on-primary transition-colors duration-300">
+                        Entrar em Contato
+                    </button>
+</article>
+<!-- Card 2: Famílias -->
+<article class="glass-card rounded-xl p-6 flex flex-col gap-4 group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-2xl" data-icon="family_restroom" data-weight="fill">family_restroom</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Célula Betel</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Voltada para casais e famílias. Compartilhamos experiências, oramos pelos nossos lares e estudamos princípios bíblicos para a família.
+                        </p>
+</div>
+<div class="mt-auto pt-4 border-t border-outline-variant flex flex-col gap-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_today">calendar_today</span>
+                            Quartas-feiras, 19:30h
+                        </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-lg" data-icon="location_on">location_on</span>
+                            Bairro Jardim Sul
+                        </div>
+</div>
+<button class="mt-4 w-full bg-transparent border border-primary text-primary font-label-bold text-label-bold uppercase py-3 rounded hover:bg-primary hover:text-on-primary transition-colors duration-300">
+                        Entrar em Contato
+                    </button>
+</article>
+<!-- Card 3: Mulheres -->
+<article class="glass-card rounded-xl p-6 flex flex-col gap-4 group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-2xl" data-icon="spa" data-weight="fill">spa</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Célula Ester</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Um espaço exclusivo para mulheres. Tempo de encorajamento mútuo, oração e estudo focados na mulher cristã contemporânea.
+                        </p>
+</div>
+<div class="mt-auto pt-4 border-t border-outline-variant flex flex-col gap-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_today">calendar_today</span>
+                            Terças-feiras, 15h
+                        </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-lg" data-icon="location_on">location_on</span>
+                            Bairro Nova Esperança
+                        </div>
+</div>
+<button class="mt-4 w-full bg-transparent border border-primary text-primary font-label-bold text-label-bold uppercase py-3 rounded hover:bg-primary hover:text-on-primary transition-colors duration-300">
+                        Entrar em Contato
+                    </button>
+</article>
+<!-- Card 4: Homens -->
+<article class="glass-card rounded-xl p-6 flex flex-col gap-4 group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-2xl" data-icon="fitness_center" data-weight="fill">fitness_center</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Célula Davi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Encontro de homens para forjar caráter, liderança e responsabilidade à luz da Bíblia, com tempo de comunhão e prestação de contas.
+                        </p>
+</div>
+<div class="mt-auto pt-4 border-t border-outline-variant flex flex-col gap-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_today">calendar_today</span>
+                            Quintas-feiras, 20h
+                        </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-bold text-label-bold">
+<span class="material-symbols-outlined text-lg" data-icon="location_on">location_on</span>
+                            Bairro Industrial
+                        </div>
+</div>
+<button class="mt-4 w-full bg-transparent border border-primary text-primary font-label-bold text-label-bold uppercase py-3 rounded hover:bg-primary hover:text-on-primary transition-colors duration-300">
+                        Entrar em Contato
+                    </button>
+</article>
+<!-- Call to Action Card (Spans across available cols on large screens) -->
+<article class="glass-card rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-8 md:col-span-2 bg-surface-container-low border-primary/30">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Não encontrou uma célula perto de você?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Temos várias outras células se reunindo em diferentes bairros e dias da semana. Preencha o formulário e ajudaremos você a encontrar o grupo perfeito.
+                        </p>
+</div>
+<div class="w-full md:w-auto">
+<button class="w-full md:w-auto bg-primary text-on-primary font-label-bold text-label-bold uppercase py-4 px-8 rounded shadow-lg hover:bg-primary-fixed transition-colors duration-300 whitespace-nowrap">
+                            Solicitar Ajuda
+                        </button>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter py-section-padding-desktop max-w-container-max mx-auto border-t border-outline-variant">
+<!-- Logo & Brand Info -->
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-on-surface dark:text-on-surface">
+                    Igreja Batista Nova Belém
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant">
+                    Uma igreja viva, amando a Deus e servindo às pessoas na nossa comunidade e no mundo.
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label-bold text-label-bold text-on-surface uppercase tracking-widest mb-2">Legal</h4>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#">Termos de Uso</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#">Política de Privacidade</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#">Política de Conteúdo</a>
+</div>
+<!-- Social / Contact / Location (Interaction placeholder) -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label-bold text-label-bold text-on-surface uppercase tracking-widest mb-2">Conecte-se</h4>
+<div class="flex gap-4">
+<!-- Social icons placeholders -->
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+<a aria-label="YouTube" class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="smart_display">smart_display</span>
+</a>
+</div>
+</div>
+<!-- Copyright (Spans full width) -->
+<div class="col-span-1 md:col-span-3 mt-8 pt-8 border-t border-outline-variant/30">
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant text-sm text-center">
+                    © 2024 Igreja Batista Nova Belém - CNPJ 00.000.000/0001-00. Todos os direitos reservados.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html><html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ministérios - Igreja Batista Nova Belém</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#474746",
+                        "status-success": "#2ECC71",
+                        "tertiary-container": "#b7b5b5",
+                        "on-tertiary": "#313030",
+                        "primary-container": "#e6ac2e",
+                        "tertiary": "#d3d0d0",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-primary": "#412d00",
+                        "on-error": "#690005",
+                        "tertiary-fixed": "#e5e2e1",
+                        "secondary-container": "#454747",
+                        "surface-tint": "#f9bd3e",
+                        "surface": "#131313",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface-container-highest": "#353535",
+                        "inverse-surface": "#e2e2e2",
+                        "on-primary-fixed-variant": "#5e4200",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#303030",
+                        "outline": "#9c8f7b",
+                        "surface-bright": "#393939",
+                        "secondary": "#c6c6c7",
+                        "background": "#131313",
+                        "surface-dark": "#121212",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "surface-dim": "#131313",
+                        "on-primary-fixed": "#271900",
+                        "on-background": "#e2e2e2",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#1b1b1b",
+                        "primary": "#ffc960",
+                        "error": "#ffb4ab",
+                        "surface-container": "#1f1f1f",
+                        "secondary-fixed": "#e2e2e2",
+                        "inverse-primary": "#7c5800",
+                        "on-surface": "#e2e2e2",
+                        "on-tertiary-container": "#474747",
+                        "status-error": "#FF4D4D",
+                        "gold-muted": "#B38624",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-fixed": "#ffdea6",
+                        "primary-fixed-dim": "#f9bd3e",
+                        "outline-variant": "#504534",
+                        "on-primary-container": "#5e4200",
+                        "surface-container-lowest": "#0e0e0e",
+                        "gold-accent": "#E6AC2E",
+                        "on-secondary": "#2f3131",
+                        "on-surface-variant": "#d4c4ae",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-variant": "#353535"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "section-padding-mobile": "40px",
+                        "container-max": "1200px",
+                        "section-padding-desktop": "80px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-xl-mobile": ["Anybody"],
+                        "display-lg": ["Anybody"],
+                        "headline-md": ["Anybody"],
+                        "nav-link": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "headline-xl": ["Anybody"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "nav-link": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-bold": ["14px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-background dark:bg-background border-b border-outline-variant dark:border-outline-variant sticky top-0 z-50">
+    <div class="flex flex-col items-center w-full max-w-container-max mx-auto px-gutter py-4 md:py-8">
+        <a class="font-display-lg text-headline-md text-on-surface dark:text-on-surface text-center block w-full mb-4 md:mb-8 hover:text-primary transition-colors" href="index.html">
+            <img src="./assets/images/logo.png" alt="Logo da Igreja Batista" class="mx-auto w-32 md:w-40" />
+        </a>
+        <nav class="flex flex-row flex-wrap items-center justify-center gap-6">
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="index.html">Início</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1 transition-colors" href="ministerios.html">Ministérios</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="nossa-historia.html">Nossa História</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="celulas.html">Células</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="eventos.html">Eventos</a>
+            <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="contribua.html">Contribua</a>
+        </nav>
+    </div>
+</header>
+<main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-section-padding-desktop">
+<!-- Hero Section -->
+<section class="mb-section-padding-desktop text-center">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-stack-md hidden md:block">Nossos Ministérios</h1>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary mb-stack-md md:hidden">Nossos Ministérios</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">
+                Descubra onde você pode servir e crescer. Nossos ministérios são projetados para equipar, encorajar e envolver cada membro da nossa comunidade.
+            </p>
+</section>
+<!-- Ministries Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Ministry Card 1 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden border border-outline-variant group hover:border-primary transition-colors duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic, high-contrast image of a modern church worship band performing on a dark stage illuminated by warm, golden spotlights. The scene focuses on a passionate singer holding a microphone, surrounded by musicians playing guitars and keyboards. The lighting is dramatic, casting deep shadows and highlighting the golden accents of the instruments, evoking a sense of powerful, contemporary praise and worship in a modern Christian setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClQnZOZMc6RhQd9oOGZM9k8vpo9GnhASdEFCJQiBHxMUwF821jGPJtmeprgrly2bchTve__HF4w_K35Cmz_OpnoQOW8OI52E15EBCEIwiP3CXsSrTCkFTzBilvpitH3J2XXzMqICuAXM0JNreezWl7wATiYO4nMBQyJ7ABk_Y7wXk_VC-ZLuXIKTbtlMSFmR6MXSj8ahxziPvNvUFcvjELEMqO946j5Jw4Vg7SEDbGVg-9GOUgj6qGTg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-on-surface">Louvor e Adoração</h3>
+<span class="material-symbols-outlined text-primary" data-icon="music_note" style="font-variation-settings: 'FILL' 1;">music_note</span>
+</div>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        Conduzindo a igreja em momentos profundos de adoração através da música e artes.
+                    </p>
+<a class="font-label-bold text-label-bold text-primary flex items-center gap-2 group-hover:text-gold-accent transition-colors w-fit" href="#">
+                        SAIBA MAIS
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Ministry Card 2 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden border border-outline-variant group hover:border-primary transition-colors duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A warmly lit scene of a group of children sitting in a circle on a colorful rug in a modern church classroom. A smiling teacher is reading from an illustrated storybook, and the children are engaged and listening intently. The atmosphere is joyful and educational, with soft, natural light filtering through a window, casting gentle shadows. The room features subtle golden accents on the furniture, reinforcing a welcoming and high-quality environment for kids' ministry." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpJ8-joZATQ6p16duftex8wTSrl5dHppGcdcMjZrEdRVWoqN_BzQmAcy7Cx-e9nEe4f-apRwayYFsp9_Bwg-5-1YEbArkuYdQfzcpQuYktUW3i1-qh-d7QvjrRaXpwDGDv4VpygrnLtp5ZEziAuO-_Qq1h9A1sLfBQq3AEURBK13cfDEhzxRDQQo48sb5J1xARs6ZxyTbjiaH1vLqSEXDZgYBR2C4CmNpdkFybyPUdwRzkLj_7DPa1-A')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-on-surface">Ministério Infantil</h3>
+<span class="material-symbols-outlined text-primary" data-icon="child_care" style="font-variation-settings: 'FILL' 1;">child_care</span>
+</div>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        Ensinando os princípios da palavra de Deus de forma lúdica e amorosa para nossas crianças.
+                    </p>
+<a class="font-label-bold text-label-bold text-primary flex items-center gap-2 group-hover:text-gold-accent transition-colors w-fit" href="#">
+                        SAIBA MAIS
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Ministry Card 3 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden border border-outline-variant group hover:border-primary transition-colors duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A dynamic, high-energy photo of young adults gathered in a modern, industrial-style loft space with exposed brick and dark walls. They are engaged in an animated conversation, drinking coffee, and holding open Bibles or notebooks. The lighting is moody and cinematic, with string lights and warm, golden desk lamps creating a focal point on the group. The aesthetic is contemporary, urban, and deeply engaging, representing an active youth or young adult ministry." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2u5xqjTSO93MsZ2RUcQ-AmybBftdLRJWBYdwZ0q48is10Pa27ywiV89YHukgWscYOd2EIKFiIZ_quqPxzSA4BK0qo6YJG8IV6aq_jUrtWXLBWnZT7vwYYTQ4PkSMk9flTNYE8JLSNJozj0M0Kq0U9QaHMCq2kUS4VNFkmzpXgpqzNe2PuFCWQdn2CAcBMHyKC01Ns1xwKQzNDvZjpOOLBhFa22G4CRpJuCq9JBv9Mu191BT5XyobT1A')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-on-surface">Jovens e Adolescentes</h3>
+<span class="material-symbols-outlined text-primary" data-icon="groups" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        Um espaço para a juventude se conectar, debater ideias e fortalecer sua fé em comunidade.
+                    </p>
+<a class="font-label-bold text-label-bold text-primary flex items-center gap-2 group-hover:text-gold-accent transition-colors w-fit" href="#">
+                        SAIBA MAIS
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Ministry Card 4 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden border border-outline-variant group hover:border-primary transition-colors duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A compassionate, close-up shot of two people embracing warmly, conveying a sense of deep support and care. The setting is a comfortable, softly lit room with dark, rich textures and subtle golden ambient light. The focus is on the genuine emotion and connection between the individuals, illustrating a pastoral care or counseling ministry. The overall mood is solemn, comforting, and deeply empathetic, fitting a modern church's aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTK3TKdA-ke7sfUlW8LGbCZGNE-3iiih8c8gXXFXIpAkbTXriu0sUyCtgLwrT6BrKkjx6VxvP2CedE4xL4DInAEYtBZELRvja6vrI3-6ASC_uIKZbrRvRJ0cc0B8bQpr_PbN_pXH7_7dlYPuTwKnpT4y035WUngsPs9lsHF6TZ1hOkkRH_hHDKP0RLd8Y-Fr4F9arwtX6l0fsNrnECSYwUnuTuWLeaiRtbVOuN-d-nAv-bThY6pkGESg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-on-surface">Aconselhamento</h3>
+<span class="material-symbols-outlined text-primary" data-icon="forum" style="font-variation-settings: 'FILL' 1;">forum</span>
+</div>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        Apoio pastoral e orientação baseada na palavra de Deus para os desafios da vida.
+                    </p>
+<a class="font-label-bold text-label-bold text-primary flex items-center gap-2 group-hover:text-gold-accent transition-colors w-fit" href="#">
+                        SAIBA MAIS
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Ministry Card 5 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden border border-outline-variant group hover:border-primary transition-colors duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A powerful image showing hands distributing food and essential supplies to people in need on an urban street at night. The lighting is moody, with streetlights casting long shadows and a warm, golden glow illuminating the faces and hands of the volunteers. The scene captures an act of social justice and compassion, emphasizing service and community outreach. The contrast between the dark environment and the glowing subjects highlights the impact of the action." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhT4V5K1QRtxJhLrr2tay4sxHAxvsxzmKfxWiZkBHFQ_4OQs47X3yuBIZNeomM_FeDfItFCKRYwhBnQxOdj-pdpc5wUdbZ6-cPLcAyzeazGSSPrF7CnVsJvTwnEmZFFiORfZ3PKq3NfeZD4_Xl1GvWAzt4z2yCviiUvVFR1zThE7MWqCr827ktSo-kQ8qL3h-QkpFL4-zTcagyQXtA7ZYhn3lI-9k8Owvp8ONdyprIZ00A_ggYRZOhZw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-on-surface">Ação Social</h3>
+<span class="material-symbols-outlined text-primary" data-icon="volunteer_activism" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+</div>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        Demonstrando o amor de Cristo de forma prática através do serviço à nossa comunidade.
+                    </p>
+<a class="font-label-bold text-label-bold text-primary flex items-center gap-2 group-hover:text-gold-accent transition-colors w-fit" href="#">
+                        SAIBA MAIS
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Ministry Card 6 -->
+<div class="bg-surface-container-highest rounded-lg overflow-hidden border border-outline-variant group hover:border-primary transition-colors duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A sharply focused close-up of hands typing on a laptop keyboard and adjusting sliders on a digital mixing console in a dark control room. Monitors in the background display video feeds of a church service. The lighting is cool, with the blue glow of screens contrasting with warm golden LED accents on the equipment. This portrays a modern media and tech ministry, highlighting professionalism and technological excellence in a cinematic style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUwVa0WgIJaBwbLC4cbLTH5tDdbz3s9mbmLnfXQ5zNODD6ZtI1HlbGFfg2AcZddqWkESP_FzIDlUAAgQFrhsRKrAeg0h_NcbEXvdwCRLLs3nqJz7uKOW0JKWimKtRiww-RADLRmIogYVyQVV-1rK-tX5obu55gKLkX6NCTv10BFpJN_9e63QBotHJfN8pIOgRy0zm_6roxiGh8rAbVFrKQsFUXgsUaiIUwV8Yg1ip4w1RmJ6ktMlQeYA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-on-surface">Mídia e Comunicação</h3>
+<span class="material-symbols-outlined text-primary" data-icon="camera" style="font-variation-settings: 'FILL' 1;">camera</span>
+</div>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        Levando a mensagem através de tecnologias, transmissões e excelência audiovisual.
+                    </p>
+<a class="font-label-bold text-label-bold text-primary flex items-center gap-2 group-hover:text-gold-accent transition-colors w-fit" href="#">
+                        SAIBA MAIS
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter py-section-padding-desktop max-w-container-max mx-auto border-t border-outline-variant">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-on-surface dark:text-on-surface">Igreja Batista Nova Belém</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant text-sm">
+                    © 2024 Igreja Batista Nova Belém - CNPJ 00.000.000/0001-00. Todos os direitos reservados.
+                </p>
+</div>
+<div class="flex flex-col gap-2 md:items-center">
+<h4 class="font-label-bold text-label-bold text-on-surface mb-2">Links Úteis</h4>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#">Termos de Uso</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#">Política de Privacidade</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#">Política de Conteúdo</a>
+</div>
+<div class="flex flex-col gap-4 md:items-end">
+<h4 class="font-label-bold text-label-bold text-on-surface mb-2">Conecte-se</h4>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
