@@ -198,7 +198,7 @@
                         <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="nossa-historia.html">Nossa História</a>
                         <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="celulas.html">Células</a>
                         <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="eventos.html">Eventos</a>
-                        <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="contribua.html">Contribua</a>
+                        <a class="font-nav-link text-nav-link uppercase tracking-widest text-on-surface dark:text-on-surface hover:text-gold-accent transition-all duration-300" href="#dizimos-ofertas">Contribua</a>
                 </nav>
         </div>
 </header>
@@ -210,9 +210,36 @@
 <div class="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
 <h1 class="font-headline-xl text-headline-xl text-white text-shadow mb-stack-md uppercase tracking-tight">Um Lugar Para Pertencer</h1>
 <p class="font-body-lg text-body-lg text-gray-200 max-w-2xl mx-auto mb-stack-lg">Junte-se a nós em uma jornada de fé, esperança e transformação. Você é bem-vindo aqui.</p>
-<a class="bg-primary text-on-primary font-label-bold text-label-bold uppercase py-3 px-8 rounded-DEFAULT hover:bg-primary-fixed-dim transition-colors" href="#">Conheça Nossos Cultos</a>
+<button class="bg-primary text-on-primary font-label-bold text-label-bold uppercase py-3 px-8 rounded-DEFAULT hover:bg-primary-fixed-dim transition-colors" type="button" aria-haspopup="dialog" aria-controls="worship-schedule">Conheça Nossos Cultos</button>
 </div>
 </section>
+<dialog class="worship-dialog" id="worship-schedule" aria-labelledby="worship-dialog-title">
+  <div class="worship-dialog__content">
+    <button class="worship-dialog__close" type="button" aria-label="Fechar programação dos cultos">&times;</button>
+    <p class="worship-dialog__eyebrow">Participe com a gente</p>
+    <h2 class="worship-dialog__title" id="worship-dialog-title">Nossos cultos</h2>
+    <div class="worship-dialog__list">
+      <article class="worship-dialog__item">
+        <h3>Culto da Família</h3>
+        <p><strong>Quintas-feiras:</strong> 19h30</p>
+        <p><strong>Domingos:</strong> 9h30 e 18h</p>
+      </article>
+      <article class="worship-dialog__item">
+        <h3>Culto Zakar <span>Rede de homens</span></h3>
+        <p>Bimestralmente, às quintas-feiras, 19h30</p>
+      </article>
+      <article class="worship-dialog__item">
+        <h3>Culto Conectadas <span>Rede de mulheres</span></h3>
+        <p>Bimestralmente, às quintas-feiras, 19h30</p>
+      </article>
+      <article class="worship-dialog__item">
+        <h3>Culto Impactados <span>Rede de jovens</span></h3>
+        <p>A cada dois sábados, às 19h</p>
+      </article>
+    </div>
+  </div>
+</dialog>
+<script src="./assets/scripts/worship-dialog.js" defer></script>
 <!-- Cards Section (Bento/Vertical Style) -->
 <section class="pt-section-padding-mobile pb-6 md:pt-section-padding-desktop md:pb-8 px-gutter max-w-container-max mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-0">
@@ -226,33 +253,33 @@
 <h2 class="font-headline-md text-headline-md text-white uppercase tracking-wider mb-2">Células</h2>
 <p class="font-body-md text-body-md text-gray-200 max-w-xs">Células são grupos de crescimento. Encontre o seu grupo.</p>
 </div>
-<button class="bg-white text-surface font-label-bold text-label-bold uppercase py-2 px-6 rounded-full hover:bg-gray-200 transition-colors">Ver Mais</button>
+<a class="bg-white text-surface font-label-bold text-label-bold uppercase py-2 px-6 rounded-full hover:bg-gray-200 transition-colors" href="celulas.html">Ver Mais</a>
 </div>
 </div>
-<!-- Card 2: Membro -->
+<!-- Card 2: Eventos -->
 <div class="relative group h-[500px] overflow-hidden cursor-pointer">
 <div class="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition-colors z-10"></div>
 <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A vibrant indoor church event with a large crowd celebrating. Confetti is falling through the air, caught in bright theatrical lighting. People have their hands raised in joy and worship. The mood is energetic, celebratory, and deeply moving, fitting for a membership or baptism celebration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9HmmTCqWAc7g2v2QZZV8MgIXV05IW9hGzKXE4x8afnRvqJRKT6pnvUsCFKgdBsSVGSqrHr1E0tu5GPrAoGlAxoNddDHm-Q8NH_YNN6CLhikdVjBWRRohXWI76Ltu9_yUl5cNylpMoOxoMK8OyDUhYY0XT_pKdUKokOcEUQAk_HpH5Wpwm30leWVvf08T1NmaWqrtD0t79Fqf7q1MUscX7Hai-fdW-Fmum4zmzZXnJCy3siQRMTuLzUQ">
 <div class="relative z-20 flex flex-col items-center justify-between h-full p-8 text-center">
 <div class="flex flex-col items-center">
-<span class="material-symbols-outlined text-[48px] text-primary mb-4" data-icon="handshake" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">handshake</span>
-<h2 class="font-headline-md text-headline-md text-white uppercase tracking-wider mb-2">Seja Membro</h2>
-<p class="font-body-md text-body-md text-gray-200 max-w-xs">Quer se tornar um membro da Nova Belém?</p>
+<span class="material-symbols-outlined text-[48px] text-primary mb-4" data-icon="event" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">event</span>
+<h2 class="font-headline-md text-headline-md text-white uppercase tracking-wider mb-2">Eventos</h2>
+<p class="font-body-md text-body-md text-gray-200 max-w-xs">Confira os próximos encontros e atividades da igreja.</p>
 </div>
-<button class="bg-white text-surface font-label-bold text-label-bold uppercase py-2 px-6 rounded-full hover:bg-gray-200 transition-colors">Quero</button>
+<a class="bg-white text-surface font-label-bold text-label-bold uppercase py-2 px-6 rounded-full hover:bg-gray-200 transition-colors" href="eventos.html">Ver Mais</a>
 </div>
 </div>
-<!-- Card 3: Batismo -->
+<!-- Card 3: Ministérios -->
 <div class="relative group h-[500px] overflow-hidden cursor-pointer">
 <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors z-10"></div>
-<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An emotional outdoor baptism scene. A young woman is emerging from the water with her arms raised in pure joy and relief, wearing a dark t-shirt. A pastor stands beside her, smiling. The background shows a crowd of supporters and a cloudy but bright sky, capturing a profound spiritual milestone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD60QAZ1S0iQwBzAf8wl-bxpK_biCsvFjYkr4cj_YSZZ1V4WArsn_hveIv0ecam8cHZBr4kt7GOCfEYb8IIaIkwAA-I8Bvtuy6sllYsbqxyjAi6du0XM7IogFAxpO5T9qH6F6KP1-Rg1ZJ30rZ4xTX8k9C94n2JE7-OFiaw7e0uy55HDMAEOddBWrN1hFlllJgYA5gK-BI1cWWkX2iqm9V-7XD3v_sTNtsfCcnk8jORX_yzqO5ru340rA">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Culto na Igreja Batista Nova Belém, com a equipe de louvor no palco e a congregação reunida." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD26cBtjnnzK8J3cb3EyH2xOaabIsf6Jo3WXeo7Z1TW-SbULST_QDRfqLikhU0_h0IndSfmRu17lF1FrTzhud_w7pz5M9ytGo3oVKGf8-302vSogFegkk_3r6tXdGdO5lx7DzqfRfyPNKyb7gS28GAEaIR8QINkZRoP5Biodx3fUPrF_HtnM5rvZC4I79Cmfbo_FGS_Io0Jfi67bV2eYGwUl16m-OiR0hdgUuocgxfnNJ0g0pc9C-Zuhg">
 <div class="relative z-20 flex flex-col items-center justify-between h-full p-8 text-center">
 <div class="flex flex-col items-center">
-<span class="material-symbols-outlined text-[48px] text-primary mb-4" data-icon="water" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">water</span>
-<h2 class="font-headline-md text-headline-md text-white uppercase tracking-wider mb-2">Batismo</h2>
-<p class="font-body-md text-body-md text-gray-200 max-w-xs">Quer se batizar e declarar sua fé publicamente?</p>
+<span class="material-symbols-outlined text-[48px] text-primary mb-4" data-icon="volunteer_activism" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">volunteer_activism</span>
+<h2 class="font-headline-md text-headline-md text-white uppercase tracking-wider mb-2">Ministérios</h2>
+<p class="font-body-md text-body-md text-gray-200 max-w-xs">Conheça nossos ministérios e descubra onde você pode servir.</p>
 </div>
-<button class="bg-white text-surface font-label-bold text-label-bold uppercase py-2 px-6 rounded-full hover:bg-gray-200 transition-colors">Quero</button>
+<a class="bg-white text-surface font-label-bold text-label-bold uppercase py-2 px-6 rounded-full hover:bg-gray-200 transition-colors" href="ministerios.html">Ver Mais</a>
 </div>
 </div>
 </div>
@@ -279,7 +306,7 @@
 </div>
 </section>
 <!-- Dízimos e Ofertas Section -->
-<section class="pt-0 pb-section-padding-mobile md:pt-0 md:pb-section-padding-desktop bg-background border-t border-surface-container-highest">
+<section id="dizimos-ofertas" class="pt-0 pb-section-padding-mobile md:pt-0 md:pb-section-padding-desktop bg-background border-t border-surface-container-highest">
 <div class="relative h-[200px] mb-12 flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 bg-black/80 z-10"></div>
 <img class="absolute inset-0 w-full h-full object-cover" data-alt="A close-up, dramatic shot of hands holding an offering plate or basket. The lighting is low-key, focusing on the gesture of giving. The background is completely dark, emphasizing the solemnity and devotion of the act of offering within a church setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcews2eFfNbHQZiKenAneyPHZTUY6wV6j6q4nEPWi3kHkIYPtQK-j7HwLlBOlvf4_RlqMCFa8Yhs3-GYjjmYlU2fouNln1H2qYR6jVJ77xXWh0HDHoEkHgwzP2z5Y1iOnaXyS-KaY2Vx2pa8rpP22dOPl46QkZSWqlcg6DIHZ305i2AKc4TpLHbmyAuGC6fF9DcJ-J_Lkk3Zf-4AEu4kiyE-FId6X0C_ZS8aJvVHJN8LTmnLWYWMk7vg">

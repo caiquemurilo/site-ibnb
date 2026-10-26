@@ -46,6 +46,118 @@
     line-height: 1.5;
 }
 
+.worship-dialog {
+    width: min(560px, calc(100% - 32px));
+    max-width: none;
+    max-height: min(80vh, 720px);
+    padding: 0;
+    overflow: auto;
+    border: 1px solid #504534;
+    border-radius: 12px;
+    background: #1b1b1b;
+    color: #e2e2e2;
+    box-shadow: 0 24px 80px rgb(0 0 0 / 55%);
+}
+
+.worship-dialog::backdrop {
+    background: rgb(0 0 0 / 75%);
+    backdrop-filter: blur(3px);
+}
+
+.worship-dialog__content {
+    position: relative;
+    padding: 32px;
+}
+
+.worship-dialog__close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #e2e2e2;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.worship-dialog__close:hover {
+    background: #353535;
+    color: #ffc960;
+}
+
+.worship-dialog__close:focus-visible {
+    outline: 2px solid #ffc960;
+    outline-offset: 2px;
+}
+
+.worship-dialog__eyebrow {
+    margin: 0 48px 8px 0;
+    color: #ffc960;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.worship-dialog__title {
+    margin: 0 40px 24px 0;
+    color: #fff;
+    font-family: Anybody, sans-serif;
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 800;
+}
+
+.worship-dialog__list {
+    display: grid;
+    gap: 12px;
+}
+
+.worship-dialog__item {
+    padding: 16px;
+    border: 1px solid rgb(80 69 52 / 70%);
+    border-radius: 8px;
+    background: #131313;
+}
+
+.worship-dialog__item h3 {
+    margin: 0 0 8px;
+    color: #ffc960;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.worship-dialog__item h3 span {
+    display: block;
+    margin-top: 2px;
+    color: #d4c4ae;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.worship-dialog__item p {
+    margin: 4px 0 0;
+    color: #e2e2e2;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.worship-dialog__item strong {
+    color: #d4c4ae;
+}
+
+@media (max-width: 480px) {
+    .worship-dialog__content {
+        padding: 28px 20px 20px;
+    }
+}
+
 .site-footer {
     width: 100%;
     padding: 32px 24px 24px;

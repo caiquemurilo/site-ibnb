@@ -22,6 +22,9 @@
               "on-surface": "#e2e2e2",
               "on-surface-variant": "#d4c4ae",
               "outline-variant": "#504534",
+              "surface-container": "#1f1f1f",
+              "surface-container-low": "#1b1b1b",
+              "primary-fixed-dim": "#f9bd3e",
               "gold-accent": "#E6AC2E",
             },
             fontFamily: {
@@ -111,27 +114,63 @@
         </div>
       </section>
 
-      <section class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-        <div class="rounded-2xl border border-outline-variant p-8 bg-surface-container-highest/40">
-          <p class="font-label-bold text-label-bold uppercase tracking-widest text-primary mb-3">Dados para contribuição</p>
-          <h2 class="font-headline-md text-headline-md text-on-surface mb-5">Banco / Transferência</h2>
-          <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
-            <li><strong class="text-on-surface">Banco:</strong> Banco do Brasil</li>
-            <li><strong class="text-on-surface">Agência:</strong> 0001</li>
-            <li><strong class="text-on-surface">Conta:</strong> 12345-6</li>
-            <li><strong class="text-on-surface">Favorecido:</strong> Igreja Batista Nova Belém</li>
-          </ul>
-        </div>
+      <section class="max-w-3xl mx-auto mb-12 text-center" aria-labelledby="contribution-form-title">
+        <p class="font-body-md text-body-md text-on-surface-variant mb-12">
+          Faça sua contribuição através de uma das nossas contas bancárias.
+        </p>
+        <div class="bg-surface-container p-8 rounded-lg max-w-2xl mx-auto mb-16 text-left">
+          <h2 id="contribution-form-title" class="font-headline-md text-headline-md text-white text-center uppercase tracking-widest mb-8">
+            Informações da contribuição
+          </h2>
 
-        <div class="rounded-2xl border border-outline-variant p-8 bg-surface-container-highest/40">
-          <p class="font-label-bold text-label-bold uppercase tracking-widest text-primary mb-3">Como participar</p>
-          <h2 class="font-headline-md text-headline-md text-on-surface mb-5">Faça parte da missão</h2>
-          <p class="font-body-md text-body-md text-on-surface-variant mb-6">
-            Cada contribuição, grande ou pequena, torna possível alcançar mais pessoas com acolhimento, propósito e esperança.
-          </p>
-          <a href="index.html" class="inline-block bg-primary text-on-primary font-label-bold text-label-bold uppercase py-3 px-6 rounded-md hover:bg-primary/90 transition-colors">Voltar ao início</a>
+          <form class="space-y-6">
+            <fieldset class="space-y-4">
+              <legend class="font-label-bold text-label-bold text-white">Qual a sua contribuição?</legend>
+              <div class="flex flex-wrap gap-6">
+                <label class="flex items-center space-x-2 cursor-pointer group">
+                  <input type="radio" name="contribution_type" value="oferta" class="w-4 h-4 border-2 border-white bg-transparent checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 transition-all" checked>
+                  <span class="font-body-md text-white group-hover:text-primary transition-colors">Oferta</span>
+                </label>
+                <label class="flex items-center space-x-2 cursor-pointer group">
+                  <input type="radio" name="contribution_type" value="dizimo" class="w-4 h-4 border-2 border-white bg-transparent checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 transition-all">
+                  <span class="font-body-md text-white group-hover:text-primary transition-colors">Dízimo</span>
+                </label>
+                <label class="flex items-center space-x-2 cursor-pointer group">
+                  <input type="radio" name="contribution_type" value="construcao" class="w-4 h-4 border-2 border-white bg-transparent checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 transition-all">
+                  <span class="font-body-md text-white group-hover:text-primary transition-colors">Oferta (Construção)</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="relative">
+              <input type="text" inputmode="decimal" aria-label="Valor da contribuição" placeholder="R$ 0,00" class="w-full p-4 text-2xl font-bold text-surface bg-white border-none rounded-DEFAULT focus:ring-2 focus:ring-primary placeholder-gray-400">
+            </div>
+
+            <div class="bg-surface-container-low p-4 rounded-DEFAULT border border-outline-variant/30 flex items-center justify-between max-w-xs">
+              <div class="flex items-center space-x-3">
+                <div class="w-6 h-6 border-2 border-outline-variant rounded-sm bg-white" aria-hidden="true"></div>
+                <span class="text-sm text-on-surface">Não sou um robô</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" class="w-8 h-8">
+                <span class="text-[10px] text-on-surface-variant">reCAPTCHA</span>
+              </div>
+            </div>
+
+            <button type="submit" class="w-full bg-primary text-on-primary font-label-bold text-label-bold uppercase py-4 rounded-DEFAULT hover:bg-primary-fixed-dim transition-colors tracking-widest">
+              CONFIRMAR
+            </button>
+          </form>
         </div>
+        <p class="font-body-lg text-body-lg text-on-surface italic max-w-xl mx-auto">
+          "Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria."
+          <span class="text-sm text-on-surface-variant not-italic mt-2 block">2 Coríntios 9:7</span>
+        </p>
       </section>
+
+      <div class="mt-12 text-center">
+        <a href="index.html" class="inline-block bg-primary text-on-primary font-label-bold text-label-bold uppercase py-3 px-6 rounded-md hover:bg-primary/90 transition-colors">Voltar ao início</a>
+      </div>
     </main>
     <footer class="site-footer">
       <div class="site-footer__inner">
