@@ -220,6 +220,149 @@
     line-height: 1.5;
 }
 
+.cell-help__notice {
+    margin: -12px 0 20px;
+    color: #d4c4ae;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cell-help__form {
+    display: grid;
+    gap: 16px;
+}
+
+.cell-help__form[hidden],
+.cell-help__success[hidden] {
+    display: none;
+}
+
+.cell-help__field {
+    display: grid;
+    gap: 6px;
+    color: #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cell-help__field input,
+.cell-help__field select {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 12px;
+    border: 1px solid #504534;
+    border-radius: 6px;
+    background: #131313;
+    color: #e2e2e2;
+    font: inherit;
+}
+
+.cell-help__field input:focus,
+.cell-help__field select:focus {
+    border-color: #ffc960;
+    outline: 2px solid rgb(255 201 96 / 25%);
+}
+
+.cell-help__conditional[hidden] {
+    display: none;
+}
+
+.cell-help__options {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 14px;
+    border: 1px solid #504534;
+    border-radius: 8px;
+}
+
+.cell-help__options legend {
+    padding: 0 6px;
+    color: #e2e2e2;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cell-help__radio {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #d4c4ae;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.cell-help__radio input {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    margin: 1px 0 0;
+    accent-color: #ffc960;
+}
+
+.cell-help__submit {
+    min-height: 48px;
+    margin-top: 4px;
+    border: 0;
+    border-radius: 4px;
+    background: #ffc960;
+    color: #412d00;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.cell-help__submit:hover {
+    transform: translateY(-1px);
+    background: #e6ac2e;
+}
+
+.cell-help__submit:focus-visible {
+    outline: 2px solid #ffc960;
+    outline-offset: 3px;
+}
+
+.cell-help__status {
+    margin: 0;
+    color: #ffb4ab;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cell-help__success {
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+    padding: 12px 0 8px;
+    text-align: center;
+}
+
+.cell-help__success-icon {
+    width: 56px;
+    height: 56px;
+    color: #ffc960;
+}
+
+.cell-help__success h3 {
+    margin: 0;
+    color: #ffc960;
+    font-family: Anybody, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cell-help__success p {
+    max-width: 380px;
+    margin: 0;
+    color: #e2e2e2;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
 @media (max-width: 480px) {
     .worship-dialog__content {
         padding: 28px 20px 20px;

@@ -285,7 +285,7 @@
                         </p>
 </div>
 <div class="w-full md:w-auto">
-<button class="w-full md:w-auto bg-primary text-on-primary font-label-bold text-label-bold uppercase py-4 px-8 rounded shadow-lg hover:bg-primary-fixed transition-colors duration-300 whitespace-nowrap">
+<button class="cell-help-trigger w-full md:w-auto bg-primary text-on-primary font-label-bold text-label-bold uppercase py-4 px-8 rounded shadow-lg hover:bg-primary-fixed transition-colors duration-300 whitespace-nowrap" type="button" aria-haspopup="dialog" aria-controls="cell-help-dialog">
                             Solicitar Ajuda
                         </button>
 </div>
@@ -293,6 +293,62 @@
 </div>
 </section>
 </main>
+<dialog class="worship-dialog" id="cell-help-dialog" aria-labelledby="cell-help-title">
+  <div class="worship-dialog__content">
+    <button class="worship-dialog__close" type="button" aria-label="Fechar formulário de ajuda">&times;</button>
+    <p class="worship-dialog__eyebrow">Vamos encontrar uma célula para você</p>
+    <h2 class="worship-dialog__title" id="cell-help-title">Solicitar ajuda</h2>
+    <p class="cell-help__notice">Preencha seus dados e conte qual opção funciona melhor para você.</p>
+    <form class="cell-help__form">
+      <label class="cell-help__field">
+        <span>Nome</span>
+        <input name="nome" type="text" autocomplete="name" maxlength="100" required>
+      </label>
+      <label class="cell-help__field">
+        <span>Celular com DDD</span>
+        <input name="celular" type="tel" autocomplete="tel" inputmode="tel" maxlength="15" placeholder="(91) 98765-4321" required>
+      </label>
+      <fieldset class="cell-help__options">
+        <legend>Qual é a sua dificuldade?</legend>
+        <label class="cell-help__radio">
+          <input name="preferencia" type="radio" value="bairro" required>
+          <span>Encontrar uma célula próxima do meu bairro</span>
+        </label>
+        <label class="cell-help__radio">
+          <input name="preferencia" type="radio" value="horario" required>
+          <span>Encontrar um dia e horário melhor para mim</span>
+        </label>
+      </fieldset>
+      <label class="cell-help__field cell-help__conditional" data-preference="bairro" hidden>
+        <span>Qual bairro você gostaria que fosse próximo?</span>
+        <input name="bairro" type="text" autocomplete="address-level2" maxlength="100" disabled>
+      </label>
+      <label class="cell-help__field cell-help__conditional" data-preference="horario" hidden>
+        <span>Qual dia da semana é melhor para você?</span>
+        <select name="dia" disabled>
+          <option value="">Selecione um dia</option>
+          <option value="segunda">Segunda-feira</option>
+          <option value="terca">Terça-feira</option>
+          <option value="quarta">Quarta-feira</option>
+          <option value="sexta">Sexta-feira</option>
+          <option value="sabado">Sábado</option>
+        </select>
+      </label>
+      <button class="cell-help__submit" type="submit">Enviar solicitação</button>
+      <p class="cell-help__status" role="status" aria-live="polite"></p>
+    </form>
+    <!-- Conectar esta confirmação à resposta de sucesso real quando o envio do formulário estiver implementado. -->
+    <section class="cell-help__success" aria-live="polite" hidden>
+      <svg class="cell-help__success-icon" viewBox="0 0 48 48" role="img" aria-label="Solicitação confirmada">
+        <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <path d="m14 24 7 7 14-15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <h3>Solicitação recebida!</h3>
+      <p>Nossa equipe analisará suas informações e entrará em contato em breve.</p>
+    </section>
+  </div>
+</dialog>
+<script src="./assets/scripts/cell-help.js" defer></script>
 <!-- Footer -->
 <footer class="site-footer">
   <div class="site-footer__inner">
