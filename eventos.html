@@ -297,14 +297,113 @@
                         </p>
 </div>
 <div class="mt-auto">
-<button class="w-full py-4 rounded-DEFAULT font-label-bold text-label-bold uppercase bg-primary text-on-primary hover:bg-gold-accent transition-colors duration-300 tracking-wider shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+<button class="event-registration-trigger w-full py-4 rounded-DEFAULT font-label-bold text-label-bold uppercase bg-primary text-on-primary hover:bg-gold-accent transition-colors duration-300 tracking-wider shadow-md hover:shadow-lg transform hover:-translate-y-0.5" type="button" aria-haspopup="dialog" aria-controls="event-registration">
                             FINALIZAR
                         </button>
 </div>
 </div>
 </article>
+<!-- Event Card 3: Active mock -->
+<article class="bg-[#FAFAFA] rounded-xl overflow-hidden shadow-lg relative flex flex-col group border border-outline-variant/20">
+<div class="relative h-72 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Mulheres reunidas em um encontro" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80">
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h2 class="font-headline-xl text-headline-xl text-white drop-shadow-md leading-tight">CONFERÊNCIA<br>DE MULHERES</h2>
+</div>
+</div>
+<div class="relative px-8 pt-12 pb-8 flex-grow flex flex-col bg-[#FAFAFA] z-10">
+<div class="absolute -top-10 left-8 bg-[#f0f4f8] rounded-full w-20 h-20 flex flex-col items-center justify-center text-center shadow-md border-2 border-white">
+<span class="text-[#3b82f6] font-display-lg text-[28px] font-extrabold leading-none tracking-tighter">16</span>
+<span class="text-[#60a5fa] font-label-bold text-[11px] uppercase tracking-wider mt-1">JAN</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-secondary-fixed mb-6">CONFERÊNCIA DE MULHERES</h3>
+<ul class="font-body-md text-body-md text-on-secondary-fixed-variant space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span>Igreja Batista Nova Belém</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span>16/01/2027, às 19h</span>
+</li>
+<li class="font-label-bold text-label-bold text-on-secondary-fixed mt-4 pt-4 border-t border-secondary-container/20">
+Valor: R$80,00
+</li>
+</ul>
+<div class="mt-auto">
+<button class="event-registration-trigger w-full py-4 rounded-DEFAULT font-label-bold text-label-bold uppercase bg-primary text-on-primary hover:bg-gold-accent transition-colors duration-300 tracking-wider shadow-md hover:shadow-lg transform hover:-translate-y-0.5" type="button" aria-haspopup="dialog" aria-controls="event-registration">
+FINALIZAR
+</button>
+</div>
+</div>
+</article>
+<!-- Event Card 4: Active mock -->
+<article class="bg-[#FAFAFA] rounded-xl overflow-hidden shadow-lg relative flex flex-col group border border-outline-variant/20">
+<div class="relative h-72 w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Jovens reunidos ao ar livre" src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80">
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h2 class="font-headline-xl text-headline-xl text-white drop-shadow-md leading-tight">IMPACTADOS<br>2027</h2>
+</div>
+</div>
+<div class="relative px-8 pt-12 pb-8 flex-grow flex flex-col bg-[#FAFAFA] z-10">
+<div class="absolute -top-10 left-8 bg-[#f0f4f8] rounded-full w-20 h-20 flex flex-col items-center justify-center text-center shadow-md border-2 border-white">
+<span class="text-[#3b82f6] font-display-lg text-[28px] font-extrabold leading-none tracking-tighter">20</span>
+<span class="text-[#60a5fa] font-label-bold text-[11px] uppercase tracking-wider mt-1">FEV</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-secondary-fixed mb-6">ENCONTRO IMPACTADOS</h3>
+<ul class="font-body-md text-body-md text-on-secondary-fixed-variant space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span>Igreja Batista Nova Belém</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span>20/02/2027, às 19h</span>
+</li>
+<li class="font-label-bold text-label-bold text-on-secondary-fixed mt-4 pt-4 border-t border-secondary-container/20">
+Valor: R$60,00
+</li>
+</ul>
+<div class="mt-auto">
+<button class="event-registration-trigger w-full py-4 rounded-DEFAULT font-label-bold text-label-bold uppercase bg-primary text-on-primary hover:bg-gold-accent transition-colors duration-300 tracking-wider shadow-md hover:shadow-lg transform hover:-translate-y-0.5" type="button" aria-haspopup="dialog" aria-controls="event-registration">
+FINALIZAR
+</button>
+</div>
+</div>
+</article>
 </div>
 </main>
+<dialog class="worship-dialog" id="event-registration" aria-labelledby="event-registration-title">
+  <div class="worship-dialog__content">
+    <button class="worship-dialog__close" type="button" aria-label="Fechar formulário de inscrição">&times;</button>
+    <p class="worship-dialog__eyebrow">Garanta sua participação</p>
+    <h2 class="worship-dialog__title" id="event-registration-title">Inscrição no evento</h2>
+    <p class="event-registration__notice">Demonstração: os dados preenchidos não serão enviados nem armazenados.</p>
+    <form class="event-registration__form">
+      <label class="event-registration__field">
+        <span>Nome completo do participante</span>
+        <input name="nome" type="text" autocomplete="name" required>
+      </label>
+      <label class="event-registration__field">
+        <span>E-mail</span>
+        <input name="email" type="email" autocomplete="email" required>
+      </label>
+      <label class="event-registration__field">
+        <span>Celular</span>
+        <input name="celular" type="tel" autocomplete="tel" required>
+      </label>
+      <label class="event-registration__field">
+        <span>CPF do participante</span>
+        <input name="cpf" type="text" autocomplete="off" inputmode="numeric" required>
+      </label>
+      <button class="event-registration__submit" type="submit">Confirmar inscrição</button>
+      <p class="event-registration__status" aria-live="polite"></p>
+    </form>
+  </div>
+</dialog>
+<script src="./assets/scripts/event-registration.js" defer></script>
 <!-- Footer -->
 <footer class="site-footer">
   <div class="site-footer__inner">
