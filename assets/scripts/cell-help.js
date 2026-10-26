@@ -30,52 +30,6 @@ if (
   };
   cellHelpForm.addEventListener("cell-help:success", showCellHelpSuccess);
 
-  const phoneInput = cellHelpForm.querySelector('input[name="celular"]');
-  if (phoneInput instanceof HTMLInputElement) {
-    phoneInput.addEventListener("input", () => {
-      const caretPosition = phoneInput.selectionStart ?? phoneInput.value.length;
-      const digitsBeforeCaret = phoneInput.value
-        .slice(0, caretPosition)
-        .replace(/\D/g, "").length;
-      const digits = phoneInput.value.replace(/\D/g, "").slice(0, 11);
-      const areaCode = digits.slice(0, 2);
-      const subscriber = digits.slice(2);
-      let formattedPhone = "";
-
-      if (areaCode.length > 0) {
-        formattedPhone = `(${areaCode}`;
-      }
-
-      if (areaCode.length === 2) {
-        formattedPhone += `) ${subscriber.slice(0, 5)}`;
-        if (subscriber.length > 5) {
-          formattedPhone += `-${subscriber.slice(5)}`;
-        }
-      }
-
-      phoneInput.value = formattedPhone;
-
-      if (digitsBeforeCaret === 0 && formattedPhone.startsWith("(")) {
-        phoneInput.setSelectionRange(1, 1);
-        return;
-      }
-
-      let formattedCaretPosition = 0;
-      let digitsCount = 0;
-      while (
-        formattedCaretPosition < formattedPhone.length &&
-        digitsCount < digitsBeforeCaret
-      ) {
-        if (/\d/.test(formattedPhone[formattedCaretPosition])) {
-          digitsCount += 1;
-        }
-        formattedCaretPosition += 1;
-      }
-
-      phoneInput.setSelectionRange(formattedCaretPosition, formattedCaretPosition);
-    });
-  }
-
   const updatePreferenceFields = () => {
     const selectedPreference = cellHelpDialog.querySelector(
       'input[name="preferencia"]:checked',

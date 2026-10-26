@@ -391,12 +391,12 @@ FINALIZAR
         <input name="email" type="email" autocomplete="email" required>
       </label>
       <label class="event-registration__field">
-        <span>Celular</span>
-        <input name="celular" type="tel" autocomplete="tel" required>
+        <span>Celular com DDD</span>
+        <input name="celular" type="tel" autocomplete="tel" inputmode="tel" maxlength="15" placeholder="(91) 98765-4321" data-phone-mask required>
       </label>
       <label class="event-registration__field">
         <span>CPF do participante</span>
-        <input name="cpf" type="text" autocomplete="off" inputmode="numeric" required>
+        <input name="cpf" type="text" autocomplete="off" inputmode="numeric" maxlength="14" placeholder="000.000.000-00" data-cpf-mask required>
       </label>
       <button class="event-registration__submit" type="submit">Confirmar inscrição</button>
       <p class="event-registration__status" aria-live="polite"></p>
@@ -404,6 +404,7 @@ FINALIZAR
   </div>
 </dialog>
 <script src="./assets/scripts/event-registration.js" defer></script>
+<script src="./assets/scripts/phone-mask.js" defer></script>
 <!-- Footer -->
 <footer class="site-footer">
   <div class="site-footer__inner">
